@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcytxgfcx7q87"
+path="res://.godot/imported/Kielen King - The Regret of Victory.ogg-7d24c4ab3033282fe4afa93d6f0d68bc.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/bg/Kielen King - The Regret of Victory.ogg"
+dest_files=["res://.godot/imported/Kielen King - The Regret of Victory.ogg-7d24c4ab3033282fe4afa93d6f0d68bc.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

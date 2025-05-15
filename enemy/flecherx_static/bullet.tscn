@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk3tg832pw83l"]
+
+[ext_resource type="Script" uid="uid://sy3j1pmqsk5v" path="res://common/bullet.gd" id="1_wyi8u"]
+[ext_resource type="Texture2D" uid="uid://lmtci1rtwv7d" path="res://enemy/flecherx_static/bullet.png" id="2_ytvbq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyi8u"]
+size = Vector2(8, 7)
+
+[node name="Bullet" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 5
+script = ExtResource("1_wyi8u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_wyi8u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.5)
+texture = ExtResource("2_ytvbq")

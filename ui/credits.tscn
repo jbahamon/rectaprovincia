@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh8slwilk1qjd"]
+
+[ext_resource type="Script" uid="uid://c3q8ltykc22d2" path="res://ui/credits.gd" id="1_ed0b0"]
+[ext_resource type="Theme" uid="uid://bddl55kv84i3a" path="res://ui/theme.tres" id="1_orljq"]
+[ext_resource type="FontFile" uid="uid://b86am1opxqx6i" path="res://ui/assets/antiquity-print.ttf" id="3_1bagf"]
+[ext_resource type="FontFile" uid="uid://b585rg6jxevg" path="res://ui/assets/NotJamOldStyle11.ttf" id="4_icdkc"]
+
+[node name="Credits" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_orljq")
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_ed0b0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="ScrollContainer/VBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1bagf")
+theme_override_font_sizes/font_size = 13
+text = "CREDITS_TITLE"
+
+[node name="Graphics" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="ScrollContainer/VBox/Graphics"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_icdkc")
+theme_override_font_sizes/font_size = 11
+text = "GRAPHICS"
+
+[node name="Sounds" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="ScrollContainer/VBox/Sounds"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_icdkc")
+theme_override_font_sizes/font_size = 11
+text = "SOUNDS"
+
+[node name="Other" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="Title3" type="Label" parent="ScrollContainer/VBox/Other"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_icdkc")
+theme_override_font_sizes/font_size = 11
+text = "OTHER"

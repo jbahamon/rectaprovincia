@@ -1,0 +1,144 @@
+[gd_scene load_steps=10 format=3 uid="uid://uubmalqcqus7"]
+
+[ext_resource type="Script" uid="uid://cyre1ln0ikmvn" path="res://main/world.gd" id="1_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://7gkvso8ke1m0" path="res://player/player.tscn" id="1_lpxd8"]
+[ext_resource type="Script" uid="uid://brvrpr0vtrw5r" path="res://ui/ui.gd" id="4_aqk2v"]
+[ext_resource type="Script" uid="uid://bp3omn2j1j5vn" path="res://ui/dialog.gd" id="5_036b0"]
+[ext_resource type="Texture2D" uid="uid://mfs5vvx87l1a" path="res://ui/assets/ammo_icon.png" id="5_40bfn"]
+[ext_resource type="Theme" uid="uid://bddl55kv84i3a" path="res://ui/theme.tres" id="6_dwbse"]
+[ext_resource type="AudioStream" uid="uid://c8yfnm7nrfeng" path="res://sound/fx/transition.wav" id="7_gqj08"]
+[ext_resource type="PackedScene" uid="uid://djho0lw4glt38" path="res://ui/game_ended_ui.tscn" id="7_wjo4r"]
+[ext_resource type="AudioStream" uid="uid://de00wrfgdq1e0" path="res://sound/fx/ui_accept.wav" id="8_u80n0"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_aqk2v")
+
+[node name="Player" parent="." instance=ExtResource("1_lpxd8")]
+position = Vector2(333, 380)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="VBoxContainer" parent="CanvasLayer"]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("6_dwbse")
+alignment = 2
+script = ExtResource("4_aqk2v")
+
+[node name="Status" type="PanelContainer" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI/Status"]
+layout_mode = 2
+
+[node name="Health" type="HBoxContainer" parent="CanvasLayer/UI/Status/HBoxContainer"]
+layout_mode = 2
+
+[node name="HealthLabel" type="Label" parent="CanvasLayer/UI/Status/HBoxContainer/Health"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("6_dwbse")
+text = "UI_HEALTH"
+vertical_alignment = 2
+
+[node name="HealthAmount" type="Label" parent="CanvasLayer/UI/Status/HBoxContainer/Health"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("6_dwbse")
+text = "10"
+vertical_alignment = 2
+
+[node name="Control" type="Control" parent="CanvasLayer/UI/Status/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Weapon" type="HBoxContainer" parent="CanvasLayer/UI/Status/HBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="WeaponLabel" type="Label" parent="CanvasLayer/UI/Status/HBoxContainer/Weapon"]
+layout_mode = 2
+text = "Weapon"
+
+[node name="WeaponName" type="Label" parent="CanvasLayer/UI/Status/HBoxContainer/Weapon"]
+layout_mode = 2
+text = "Chanchullo"
+
+[node name="Vision" type="HBoxContainer" parent="CanvasLayer/UI/Status/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VisionLabel" type="Label" parent="CanvasLayer/UI/Status/HBoxContainer/Vision"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "UI_CHALLANCO"
+vertical_alignment = 2
+
+[node name="Eye1" type="TextureRect" parent="CanvasLayer/UI/Status/HBoxContainer/Vision"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_40bfn")
+stretch_mode = 2
+
+[node name="Eye2" type="TextureRect" parent="CanvasLayer/UI/Status/HBoxContainer/Vision"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_40bfn")
+stretch_mode = 2
+
+[node name="Dialog" type="PanelContainer" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 2
+script = ExtResource("5_036b0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI/Dialog"]
+layout_mode = 2
+
+[node name="Content" type="RichTextLabel" parent="CanvasLayer/UI/Dialog/HBoxContainer"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_horizontal = 3
+scroll_active = false
+
+[node name="Close" type="Label" parent="CanvasLayer/UI/Dialog/HBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+size_flags_vertical = 8
+text = "[Z]"
+vertical_alignment = 2
+
+[node name="Timer" type="Timer" parent="CanvasLayer/UI/Dialog"]
+wait_time = 0.3
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.027451, 0.0941176, 0.129412, 1)
+
+[node name="GameEndedUI" parent="CanvasLayer" instance=ExtResource("7_wjo4r")]
+visible = false
+
+[node name="TransitionSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_gqj08")
+volume_db = -10.0
+
+[node name="UISound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_u80n0")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+volume_db = -8.0

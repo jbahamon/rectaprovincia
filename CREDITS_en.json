@@ -1,0 +1,237 @@
+[	
+	{
+		"category": "graphics",
+		"author_name": "Olga Yakovleva",
+		"author_url": "https://lettercore.itch.io/",
+		"asset_name": "Arbata Compact [Font]",
+		"asset_url": "https://lettercore.itch.io/arbata-compact",
+		"asset_usage": "Font for dialogue and UI"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "SciGho",
+		"author_url": "https://ninjikin.itch.io/",
+		"asset_name": "Font+ [Antiquity Print]",
+		"asset_url": "https://ninjikin.itch.io/font-antiquity-script",
+		"asset_usage": "Font for titles"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "Not Jam",
+		"author_url": "https://not-jam.itch.io/",
+		"asset_name": "Not Jam Old Style 11",
+		"asset_url": "https://not-jam.itch.io/not-jam-old-style-11",
+		"asset_usage": "Font for subheadings"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "Larry D. Moore",
+		"author_url": "https://en.wikipedia.org/wiki/User:Nv8200pa",
+		"asset_name": "Entrance crystal cave",
+		"asset_url": "https://commons.wikimedia.org/wiki/File:Entrance_crystal_cave.jpg",
+		"asset_usage": "Intro cave image"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "Blogtrepreneur",
+		"author_url": "https://www.flickr.com/people/143601516@N03",
+		"asset_name": "Legal Gavel & Closed Law Book",
+		"asset_url": "https://commons.wikimedia.org/wiki/File:Legal_Gavel_%26_Closed_Law_Book_(27571522123).jpg",
+		"asset_usage": "Intro gavel image"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "beachboogeyman",
+		"author_url": "https://beachboogeyman.itch.io/",
+		"asset_name": "Eerie Places",
+		"asset_url": "https://beachboogeyman.itch.io/eerie-places",
+		"asset_usage": "Intro house images"
+	},
+	{
+		"category": "graphics",
+		"author_name": "Gumpy Function",
+		"author_url": "https://www.gumpyfunction.com/",
+		"asset_name": "Game Boy Top-down RPG Fantasy Tileset",
+		"asset_url": "https://gumpyfunction.itch.io/game-boy-rpg-fantasy-tileset-free",
+		"asset_usage": "Various house interior tiles and objects"
+	},
+	{
+		"category": "graphics",
+		"author_name": "Elvies",
+		"author_url": "https://elvies.itch.io/",
+		"asset_name": "GB Studio Open Tilesets",
+		"asset_url": "https://elvies.itch.io/gb-studio-assets",
+		"asset_usage": "Various tiles and objects"
+	},
+	{
+		"category": "graphics",
+		"author_name": "sonDanielson",
+		"author_url": "https://sondanielson.itch.io/",
+		"asset_name": "Gameboy Simple RPG Tileset",
+		"asset_url": "https://sondanielson.itch.io/gameboy-simple-rpg-tileset",
+		"asset_usage": "House sprite"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "peb",
+		"author_url": "https://pebonius.itch.io/",
+		"asset_name": "GB funky fauna",
+		"asset_url": "https://pebonius.itch.io/gb-funky-fauna",
+		"asset_usage": "Frog sprite"
+	},
+	
+	{
+		"category": "graphics",
+		"author_name": "ElvGames",
+		"author_url": "https://elvgames.com/",
+		"asset_name": "Free Inventory Sci-Fi",
+		"asset_url": "https://elvgames.itch.io/free-sci-fi-inventory",
+		"asset_usage": "UI Panel"
+	},
+		
+	{
+		"category": "graphics",
+		"author_name": "Glionox",
+		"author_url": "https://glionox.itch.io/",
+		"asset_name": "Items pack (x16)",
+		"asset_url": "https://glionox.itch.io/items16",
+		"asset_usage": "Item icons"
+	},
+		
+			
+	{
+		"category": "graphics",
+		"author_name": "Dream Mix (Justin Sink)",
+		"author_url": "https://dreammix.itch.io/",
+		"asset_name": "Gameboy Color Bush 1",
+		"asset_url": "https://dreammix.itch.io/gameboy-bush-1",
+		"asset_usage": "Bush sprite"
+	},
+	
+	
+	{
+		"category": "sounds",
+		"author_name": "FirahFabe",
+		"author_url": "https://firahfabe.com",
+		"asset_name": "Chiptune 8-bit Music Pack",
+		"asset_url": "https://firahfabe.itch.io/chiptune-8-bit-music-pack",
+		"asset_usage": "Title screen BGM"
+	},
+	
+	
+	{
+		"category": "sounds",
+		"author_name": "Monarkie (Kielen King)",
+		"author_url": "https://kielenkingmusic.com",
+		"asset_name": "Kastlevania",
+		"asset_url": "https://monarkie.itch.io/kastlevania",
+		"asset_usage": "Intro BGM, Forest BGM"
+	},
+	
+	
+	{
+		"category": "sounds",
+		"author_name": "Spring Spring",
+		"author_url": "https://spring-enterprises.neocities.org/",
+		"asset_name": "8-bit/Lo-Fi Snare Drum Sound",
+		"asset_url": "https://opengameart.org/content/8-bitlo-fi-snare-drum-sound",
+		"asset_usage": "Player get hit sound"
+	},
+
+	{
+		"category": "sounds",
+		"author_name": "Rosalila Studio",
+		"author_url": "https://opengameart.org/users/rosalila",
+		"asset_name": "Flatshot Complete SFX Pack",
+		"asset_url": "https://opengameart.org/content/flatshot-complete-sfx-pack",
+		"asset_usage": "Obtain item sound"
+	},
+	
+	{
+		"category": "sounds",
+		"author_name": "KronBits",
+		"author_url": "https://kronbits.itch.io/",
+		"asset_name": "200 Free SFX",
+		"asset_url": "https://kronbits.itch.io/freesfx",
+		"asset_usage": "UI accept sound, roar sound"
+	},
+	
+	{
+		"category": "sounds",
+		"author_name": "Coffee 'Valen' Bat",
+		"author_url": "https://coffeebat.neocities.org/",
+		"asset_name": "Sweet Sounds - A GB Studio Sound Effect Pack",
+		"asset_url": "https://coffeevalenbat.itch.io/sweet-sounds-sfx-pack",
+		"asset_usage": "Screen transition sound"
+	},
+	
+	{
+		"category": "sounds",
+		"author_name": "nekoninja",
+		"author_url": "https://freesound.org/people/nekoninja/",
+		"asset_name": "samurai slash",
+		"asset_url": "https://freesound.org/people/nekoninja/sounds/370204/",
+		"asset_usage": "Cutting sound"
+	},
+	
+	{
+		"category": "sounds",
+		"author_name": "Juhani Junkala",
+		"author_url": "https://www.youtube.com/@subspaceaudio6850",
+		"asset_name": "The Essential Retro Video Game Sound Effects Collection [512 sounds]",
+		"asset_url": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+		"asset_usage": "Steps, shooting, jumping and landing sounds"
+	},
+	
+	
+	{
+		"category": "sounds",
+		"author_name": "Blender Foundation",
+		"author_url": "https://apricot.blender.org/",
+		"asset_name": "Ambient Bird, Cricket and Frog",
+		"asset_url": "https://opengameart.org/content/ambient-bird-cricket-and-frog",
+		"asset_usage": "Frog sound"
+	},
+
+	{
+		"category": "sounds",
+		"author_name": "zipdisq™",
+		"author_url": "https://zipdisq.itch.io/",
+		"asset_name": "zipChip Sound Effects Pack",
+		"asset_url": "https://zipdisq.itch.io/zipchip-sfx-01",
+		"asset_usage": "Challanco sound, enemy get hit sound"
+	},
+	{
+		"category": "sounds",
+		"author_name": "colorsCrimsonTears",
+		"author_url": "https://freesound.org/people/colorsCrimsonTears/",
+		"asset_name": "Heal - Rpg",
+		"asset_url": "https://freesound.org/people/colorsCrimsonTears/sounds/562292/",
+		"asset_usage": "Health pickup sound"
+	},
+	{
+		"category": "sounds",
+		"author_name": "harvey656",
+		"author_url": "https://harvey656.itch.io/",
+		"asset_name": "8-bit Game Sound Effects Collection",
+		"asset_url": "https://harvey656.itch.io/8-bit-game-sound-effects-collection",
+		"asset_usage": "Tue tue sound"
+	},
+	
+	{
+		"category": "other",
+		"author_name": "Sonia Montecino Aguirre",
+		"author_url": "",
+		"asset_name": "Mitos de Chile: Enciclopedia de seres, apariciones y encantos",
+		"asset_url": "https://www.catalonia.cl/libros/mitos-de-chile-enciclopedia-de-seres-apariciones-y-encantos-2/",
+		"asset_usage": "Reference for mythology and creatures"
+	}
+	
+	
+]

@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://2d47qpdhbu7i"]
+
+[ext_resource type="Texture2D" uid="uid://dgjx4v5lgiiv0" path="res://player/assets/dust.png" id="1_m1u1h"]
+[ext_resource type="Script" uid="uid://cf4mow7snyjni" path="res://player/dust.gd" id="2_jjf1e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjf1e"]
+atlas = ExtResource("1_m1u1h")
+region = Rect2(0, 0, 9, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckj8t"]
+atlas = ExtResource("1_m1u1h")
+region = Rect2(9, 0, 9, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy6r5"]
+atlas = ExtResource("1_m1u1h")
+region = Rect2(18, 0, 9, 9)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h50kr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjf1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckj8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy6r5")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Dust" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_h50kr")
+autoplay = "default"
+frame = 2
+frame_progress = 1.0
+script = ExtResource("2_jjf1e")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

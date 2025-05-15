@@ -1,0 +1,38 @@
+keys,en,es
+START,Start,Comenzar
+CREDITS,Credits,Créditos
+EXIT,Exit,Salir
+START_HELP,Start the game,Comenzar el juego
+CREDITS_HELP,See the game's credits,Ver los créditos del juego
+EXIT_HELP,Exit the game,Salir del juego
+MAIN_MENU_CONTROLS,[%s][%s]: Move [%s]: Select,[%s][%s]: Mover [%s]: Elegir
+CREDITS_CONTROLS,[%s][%s]: Move [%s]: Back,[%s][%s]: Mover [%s]: Volver
+
+INTRO_1,"It's 1880. In Chiloé, witches and warlocks have formed a secret society: the Recta Provincia.","Es 1880. En Chiloé, brujas y brujos han formado una sociedad secreta: la Recta Provincia."
+INTRO_2,"Working out of a secret cave, they heal, hinder or even kill according to their own sense of justice.","Desde su sede en una cueva secreta, curan, dañan y hasta matan de acuerdo a su propia definición de justicia."
+INTRO_3,"Eventually, authorities capture some of them.","Eventualmente, algunos de ellos son capturados por las autoridades."
+INTRO_4,"The group wants retaliation. But the King, their leader, refuses, and punishes whoever insists.","El grupo ansía devolver el golpe. Pero el Rey, su líder, se rehúsa, y castiga a quien insista en ello."
+INTRO_5,"Furious, the warlocks head to his house in the woods with a sinister plan.","Furiosos, los brujos se dirigen a su casa en el bosque con un siniestro plan."
+INTRO_6,"They take his eyes, his lover and leave him for dead. But he will rise against this betrayal.","Le arrebatan sus ojos, su amante y lo abandonan, dándolo por muerto. Pero se levantará contra esta traición."
+
+CONTROLS_HELP,"Move with [%s] and [%s].\nJump with [%s].","Muévete con [%s] y [%s].\nSalta con [%s]."
+PROTAGONIST_DIALOG_1,"They made a mistake by leaving me alive. Even if they blinded me, I'm more than capable of stopping them.","Fue un error dejarme con vida. Incluso sin mis ojos, soy más que capaz de detenerles."
+PROTAGONIST_DIALOG_2,"Yes, my trusty Challanco. I can use it with [%s] to see beyond, even if for a moment.","Ah, sí. 	Mi Challanco. Puedo usarlo con [%s] para ver por unos momentos."
+PROTAGONIST_DIALOG_3,"I was wise to hide the Levisterio here. Now that I've retrieved it, I can shoot down my enemies with [%s].","Fue una buena idea esconder el Levisterio. Ahora que lo recuperé, puedo atacar a mis enemigos con [%s]."
+
+UI_HEALTH,Health:,Salud:
+UI_CHALLANCO,Challanco:,Challanco:
+
+END_1,"The Cave must be near... I'll find them here. But where's the...","La Cueva debe de estar cerca... deben estar aquí. Pero, ¿dónde está...?"
+END_2,"...the Invunche. You're under their command now, right? Have at it!","...el Invunche. Sigues sus órdenes ahora, ¿no? ¡Pues haz tu mejor esfuerzo!"
+
+WIN,Thanks for playing!,¡Gracias por jugar!
+GAME_OVER,You lost...,Perdiste...
+RETRY,Try again,Intentar de nuevo
+BACK_TO_MENU,Go back to the main menu,Volver al menú principal
+CREDITS_TITLE,Credits,Creditos
+GRAPHICS,Graphics,Graficas
+SOUNDS,Sounds,Sonidos
+OTHER,Other,Otros
+
+CREDITS_FILE,res://CREDITS_en.json,res://CREDITS_es.json

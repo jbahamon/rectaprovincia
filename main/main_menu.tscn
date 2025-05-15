@@ -1,0 +1,142 @@
+[gd_scene load_steps=7 format=3 uid="uid://beripfov8p6fo"]
+
+[ext_resource type="Theme" uid="uid://bddl55kv84i3a" path="res://ui/theme.tres" id="1_4l7av"]
+[ext_resource type="Script" uid="uid://dht6h6oyvldml" path="res://main/main_menu.gd" id="1_dhah8"]
+[ext_resource type="FontFile" uid="uid://b86am1opxqx6i" path="res://ui/assets/antiquity-print.ttf" id="3_csgli"]
+[ext_resource type="PackedScene" uid="uid://bh8slwilk1qjd" path="res://ui/credits.tscn" id="3_w2mlq"]
+[ext_resource type="AudioStream" uid="uid://wgiuj7trdsmp" path="res://sound/bg/FirahFabe - Mystery_Lurks_B.ogg" id="4_4u0aa"]
+[ext_resource type="AudioStream" uid="uid://de00wrfgdq1e0" path="res://sound/fx/ui_accept.wav" id="5_8cpu2"]
+
+[node name="Control" type="CanvasLayer"]
+script = ExtResource("1_dhah8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MainContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("1_4l7av")
+
+[node name="MainMenu" type="VBoxContainer" parent="MarginContainer/MainContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Control3" type="Control" parent="MarginContainer/MainContainer/MainMenu"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TitleContainer" type="HBoxContainer" parent="MarginContainer/MainContainer/MainMenu"]
+layout_mode = 2
+
+[node name="Filler" type="Control" parent="MarginContainer/MainContainer/MainMenu/TitleContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/MainContainer/MainMenu/TitleContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_csgli")
+theme_override_font_sizes/font_size = 13
+text = "Recta Provincia"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Filler2" type="Control" parent="MarginContainer/MainContainer/MainMenu/TitleContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionsContainer" type="HBoxContainer" parent="MarginContainer/MainContainer/MainMenu"]
+layout_mode = 2
+
+[node name="Filler" type="Control" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Options" type="VBoxContainer" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer"]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options"]
+layout_mode = 2
+mouse_filter = 2
+button_mask = 0
+text = "START"
+flat = true
+
+[node name="Credits" type="Button" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options"]
+layout_mode = 2
+mouse_filter = 2
+button_mask = 0
+text = "CREDITS"
+flat = true
+
+[node name="Exit" type="Button" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options"]
+layout_mode = 2
+mouse_filter = 2
+button_mask = 0
+text = "EXIT"
+flat = true
+
+[node name="Filler2" type="Control" parent="MarginContainer/MainContainer/MainMenu/OptionsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control2" type="Control" parent="MarginContainer/MainContainer/MainMenu"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Credits" parent="MarginContainer/MainContainer" instance=ExtResource("3_w2mlq")]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HelpBar" type="HBoxContainer" parent="MarginContainer/MainContainer"]
+layout_mode = 2
+
+[node name="HelpText" type="Label" parent="MarginContainer/MainContainer/HelpBar"]
+layout_mode = 2
+text = "Start the game"
+
+[node name="Control" type="Control" parent="MarginContainer/MainContainer/HelpBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ControlsText" type="Label" parent="MarginContainer/MainContainer/HelpBar"]
+layout_mode = 2
+text = "[%s][%s]: Move [%s]: Select"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+process_mode = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027451, 0.0941176, 0.129412, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("4_4u0aa")
+autoplay = true
+
+[node name="UISound" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("5_8cpu2")
+autoplay = true
+
+[connection signal="focus_entered" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Start" to="." method="_on_start_focus_entered"]
+[connection signal="pressed" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Start" to="." method="_on_start_pressed"]
+[connection signal="focus_entered" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Credits" to="." method="_on_credits_focus_entered"]
+[connection signal="pressed" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Credits" to="." method="_on_credits_pressed"]
+[connection signal="focus_entered" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Exit" to="." method="_on_exit_focus_entered"]
+[connection signal="pressed" from="MarginContainer/MainContainer/MainMenu/OptionsContainer/Options/Exit" to="." method="_on_exit_pressed"]
+[connection signal="exit" from="MarginContainer/MainContainer/Credits" to="." method="_on_credits_exit"]

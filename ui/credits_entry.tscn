@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvo3p8c6k8yk4"]
+
+[ext_resource type="Script" uid="uid://ctpuein2bxtht" path="res://ui/credits_entry.gd" id="1_4oltj"]
+[ext_resource type="Theme" uid="uid://bddl55kv84i3a" path="res://ui/theme.tres" id="1_ke0v2"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ke0v2")
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+script = ExtResource("1_4oltj")
+
+[node name="CreditsEntry" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AssetUsage" type="Label" parent="CreditsEntry"]
+layout_mode = 2
+text = "Spooky sound"
+
+[node name="AssetName" type="RichTextLabel" parent="CreditsEntry"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Sound name"
+fit_content = true
+scroll_active = false
+
+[node name="AuthorName" type="RichTextLabel" parent="CreditsEntry"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Author"
+fit_content = true
+scroll_active = false
+
+[connection signal="meta_clicked" from="CreditsEntry/AssetName" to="." method="_on_meta_clicked"]

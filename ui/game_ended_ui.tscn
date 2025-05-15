@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://djho0lw4glt38"]
+
+[ext_resource type="Theme" uid="uid://bddl55kv84i3a" path="res://ui/theme.tres" id="1_mh6r7"]
+[ext_resource type="Script" uid="uid://cjb16tnfx3qms" path="res://ui/game_ended_ui.gd" id="2_j85jc"]
+[ext_resource type="AudioStream" uid="uid://de00wrfgdq1e0" path="res://sound/fx/ui_accept.wav" id="3_mbcyh"]
+
+[node name="GameOverUI" type="MarginContainer"]
+process_mode = 2
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mh6r7")
+script = ExtResource("2_j85jc")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.027451, 0.0941176, 0.129412, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 31
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "GAME_OVER"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Retry" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "RETRY"
+flat = true
+
+[node name="Exit" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "BACK_TO_MENU"
+flat = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+color = Color(0.027451, 0.0941176, 0.129412, 1)
+
+[node name="UISound" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("3_mbcyh")
+
+[node name="UIFocusSound" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("3_mbcyh")
+
+[connection signal="focus_entered" from="VBoxContainer/HBoxContainer/Retry" to="." method="_on_button_focus"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/HBoxContainer/Exit" to="." method="_on_button_focus"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Exit" to="." method="_on_exit_pressed"]

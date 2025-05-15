@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dotx8h3mi3rk7"]
+
+[ext_resource type="Texture2D" uid="uid://bhoei43as0yxh" path="res://player/assets/hole.png" id="1_bed0s"]
+[ext_resource type="Script" uid="uid://c2k0tkyxqp73o" path="res://player/vision_circle.gd" id="2_ghg3h"]
+
+[node name="VisionCircle" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_bed0s")
+script = ExtResource("2_ghg3h")
