@@ -1,13 +1,32 @@
-Recta Provincia
-===============
+# Recta Provincia
 
-A game by Toothy Kiwi Games made for LAGS Game Jam 2025 :)
+A small retro-styled platformer made with Godot for LAGS Game Jam 2025 :)
 
-Credits
-===============
+## About
 
-Graphics
-----------------------
+Made solo for the LAGS Game Jam 2025, which lasted 7 days. Games were expected to have some kind of Latin American flavor, plus having "what the eyes don't see, the heart won't feel" as the theme. 
+
+This game is named after the Recta Provincia, which was the name used by a secret organization of warlocks and witches from Chiloé, Chile, for that territory. The name is now commonly used to refer to the organization itself, which was active between the 18th and early 20th century.
+
+The player character has been blinded - the screen is dark except for your sprite, the UI, and graphical representations of the sounds you hear. When you activate one of your magical artifacts you will temporarily be able to see things in a small circle in the screen. As activations are limited, you have to navigate by choosing when to "see". 
+
+## Play It
+
+[Play in your browser or download at itch.io](https://toothykiwi.itch.io/recta-provincia).
+
+## Features
+
+- Localization (though only through system detection, didn't get to put it in settings)
+
+## Screenshots
+
+![The player character, activating his power in the rain, showing the radius of effect](docs/screenshot_1.png)
+
+![New abilities can be unlocked... though I only managed to implement one](docs/screenshot_2.png)
+
+## Credits
+
+### Graphics
 
 Font for dialogue and UI:
   Arbata Compact [Font] (https://lettercore.itch.io/arbata-compact) by Olga Yakovleva (https://lettercore.itch.io/)
@@ -48,8 +67,7 @@ Item icons:
 Bush sprite:
   Gameboy Color Bush 1 (https://dreammix.itch.io/gameboy-bush-1) by Dream Mix (Justin Sink) (https://dreammix.itch.io/)
 
-Music and Sounds
-----------------------
+### Music and Sounds
 
 Title screen BGM:
   Chiptune 8-bit Music Pack (https://firahfabe.itch.io/chiptune-8-bit-music-pack) by FirahFabe (https://firahfabe.com)
@@ -87,8 +105,7 @@ Health pickup sound:
 Tue tue sound:
   8-bit Game Sound Effects Collection (https://harvey656.itch.io/8-bit-game-sound-effects-collection) by harvey656 (https://harvey656.itch.io/)
 
-Other
-----------------------
+### Inspiration and Research
 
 Reference for mythology and creatures:
   Mitos de Chile: Enciclopedia de seres, apariciones y encantos (https://www.catalonia.cl/libros/mitos-de-chile-enciclopedia-de-seres-apariciones-y-encantos-2/) by Sonia Montecino Aguirre
